@@ -1,0 +1,163 @@
+.footer {
+	background: $dark_gray;
+	border-top: 7px solid $grey;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 95px;
+
+
+		@include breakpoint(small down) {
+			column-gap: 50px;
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__columns {
+		flex: 1 1 auto;
+		row-gap: 30px;
+		padding: 45px 0;
+
+		@include breakpoint(medium down) {
+			padding: 30px 0;
+		}
+		@include breakpoint(small down) {
+			padding:0;
+		}
+	}
+	&__column-title {
+		margin: 0;
+		&:after {
+			content: '';
+			display: block;
+			width: 18px;
+			height: 3px;
+			margin: 15px 0;
+			background: $potters-clay;
+
+			@include breakpoint(small down) {
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+		}
+
+	}
+
+	&__list {
+		@include list-unstyled;
+		display: flex;
+		flex-direction: column;
+
+		&-item {
+
+			&:not(:last-child) {
+				margin-bottom: 12px;
+			}
+
+			a {
+				font-size: 14px;
+				color: #b4b4b4;
+				transition: .1s linear;
+
+				@include breakpoint(small down) {
+					font-size: 12px;
+				}
+
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&__socials {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 25px;
+
+		.fas, .fab {
+			display: block;
+			font-size: 25px;
+			color: #787878;
+			transition: .1s linear;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+
+		.footer__email {
+			margin-bottom: 23px;
+		}
+
+		@include breakpoint(small down) {
+			flex-direction: row;
+			justify-content: flex-start;
+			column-gap: 15px;
+		}
+	}
+	.page-up {
+		border-radius: 60%;
+		cursor: pointer;
+		margin-bottom: 26px;
+		transition: .2s linear;
+
+		&:hover {
+			background-color: $grey;
+		}
+	}
+}
+
+.footer__logo {
+	img {
+		max-height: 120px;
+		width: auto;
+	}
+}
+
+.footer__sp {
+	text-align: right;
+}
+
+.footer-menu {
+	@include list-unstyled;
+	text-align: center;
+
+	li {
+		display: inline-block;
+
+		a {
+			display: block;
+			padding: 5px 10px;
+		}
+	}
+}
+
+.footer__copy {
+	padding: 10px 0;
+	background-color: #323232;
+	font-size: 12px;
+	text-align: center;
+
+	&-wrapper {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+
+		@include breakpoint(medium down) {
+			justify-content: center;
+			flex-direction: column;
+			font-size: 10px;
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+
+
+}

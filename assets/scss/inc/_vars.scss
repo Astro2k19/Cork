@@ -1,0 +1,34 @@
+// Project variables
+
+$blue: #1a608b;
+
+$text-color: #fff;
+$potters-clay: #8a5f3c;
+$grey: #505050;
+$dark-gray:#282828;
+$ginger: #b76827;
+
+$main-color: #fff;
+$sub-color: $main-color;
+
+$font: 'MicrosoftYaHei';
+$sub-font: $font;
+$fa: 'Font Awesome 5 Free';
+$fab: 'Font Awesome 5 Brands';
+
+// Font Awesome Vars
+$fa-font-path: "../fonts";
+$fa-font-display: swap;
+
+// Project mixins
+
+
+// Custom fonts
+
+@font-face {
+  font-family: 'MicrosoftYaHei';
+  src: url('../fonts/MicrosoftYaHei.woff') format('woff');
+  src: url('../fonts/MicrosoftYaHei.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}

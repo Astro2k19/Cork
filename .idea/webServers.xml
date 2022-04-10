@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0591e9a2-5395-4c25-b15b-0e78d6941d56" name="cork">
+        <fileTransfer rootFolder="/var/www/html/internship/katrushchenko/cork/wp-content/themes/cork" accessType="SFTP" host="64.91.224.47" port="25566" sshConfigId="5d9c8f0c-f2da-408d-8ff2-8872d6841ac7" sshConfig="rtat0@64.91.224.47:25566 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
